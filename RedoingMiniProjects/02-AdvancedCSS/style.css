@@ -1,0 +1,218 @@
+
+
+body {
+  background-color: rgb(66, 161, 49);
+  width: 100%;
+}
+
+
+.header {
+  border-style: solid;
+  border-color: lightgreen;
+  border-width: 5px;
+  background-color: rgb(23, 22, 22);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+header h1 {
+  background-color: cyan;
+  padding: 10px;
+}
+header h1:hover {
+  background-color: black;
+  color: lightgreen;
+}
+.header div {
+  padding-top: 10px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.header div ul li {
+  display: inline-block;
+  margin-left: 55px;
+}
+
+header h1 {
+  display: inline-block;
+}
+a {
+  color: cyan;
+}
+a:hover {
+  color: lightgreen;
+  background-color: black;
+  font-weight: bolder;
+}
+
+.backgroundimage {
+  height: 250px;
+  width: 100%;
+  margin-bottom: -70px;
+  background-image: url("https://repository-images.githubusercontent.com/310526431/f3510580-2712-11eb-9cf2-793ab4e1bbf7");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#box1 {
+  border-style: solid;
+  border-width: 5px;
+  width: 250px;
+  height: 70px;
+  padding: 20px;
+  font-size: 22px;
+  background-color: cyan;
+  color: black;
+  text-align: center;
+  background-image: url(https://m.media-amazon.com/images/I/6196dYkcnWL._AC_UY1000_.jpg);
+  background-size: cover;
+  background-position: center;
+
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+#box1:hover {
+  background-color: black;
+  color: lightgreen;
+  transform: scale(1.5);
+}
+
+.about {
+  border-style: solid;
+  border-width: 5px;
+  width: 400px;
+  padding: 5px;
+  margin-top: 15px;
+  background-color: black;
+  color: cyan;
+  text-align: center;
+}
+.about:hover {
+  color: lightgreen;
+}
+main {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.aboutSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#workTitle {
+  text-align: center;
+}
+/* need refresher how and when to use flex containers */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  border-style: double;
+}
+
+.box {
+  color: lightgreen;
+  border-style: outset;
+  border-width: 7px;
+  width: 50px;
+  height: 300px;
+  padding: 6px;
+  font-size: 20px;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /*Need help understanding how to do this*/
+  flex-basis: 45%;
+}
+#boxImageOne {
+  background-image: url(https://w0.peakpx.com/wallpaper/144/886/HD-wallpaper-green-line-waves-dark-amoled-black-contrast-drawing-game-light-retro-white.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#boxImageTwo {
+  background-image: url(https://images.pond5.com/appearance-green-neon-symbol-calculator-footage-133627085_iconl.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+#boxImageThree {
+  background-image: url(https://www.color-meanings.com/wp-content/uploads/2022/03/Green-explosion-on-black-background-1024x683.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+#boxImageFour {
+  background-image: url(https://as1.ftcdn.net/v2/jpg/01/91/44/86/1000_F_191448626_35Nrwld2rDG7IbgOFt6nBLUQ2fAesW7l.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.box:hover {
+  box-shadow: 5px 5px 15px black;
+  transform: scale(1.03);
+}
+/* Need help learning how to make my css neater + keeping everything in order. (basic*/
+#workTitle {
+  border-bottom-style: double;
+}
+#bigbox {
+  color: lightgreen;
+  border-style: outset;
+
+  border-width: 5px;
+  width: 445px;
+  height: 450px;
+  padding: 6px;
+  font-size: 20px;
+  margin: 20px;
+  flex-basis: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/57CA/production/_122247422_pills.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#bigbox:hover {
+  box-shadow: 5px 5px 15px black;
+  transform: scale(1.03);
+}
+
+.footer {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  background-color: rgb(23, 22, 22);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  font-weight: bolder;
+}
+
+#footerText {
+  color: red;
+  text-align: right;
+}
+
+#h2 {
+  border-top-style: double;
+  border-color: lightgreen;
+  color: lightgreen;
+}
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  body,
+  .header,
+  #bigbox,
+  .box,
+  .flex-container,
+  .aboutSection {
+    flex-direction: column;
+  }
+}

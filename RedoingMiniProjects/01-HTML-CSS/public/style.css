@@ -1,0 +1,24 @@
+body {
+    flex: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.mainPageContainer{
+    border-style: solid;
+    
+}
+
+.navBar {
+    justify-content: space-evenly;
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Footer {
+    border-style: solid;
+}
