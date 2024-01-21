@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Furkans-Coding-Quiz</title>
+  </head>
+  <body class="body">
+    <article class="container">
+      <h1>Software Coding Quiz!</h1>
+      <h3 id="rules">Rules:</h3>
+      <ul class="rulesList">
+        <li>Press Start To Play!</li>
+        <li>Choose the best answer to the given question.</li>
+        <li>Remember you are TIMED!</li>
+        <li>If correct you will be given 10 Points.</li>
+        <li>
+          If incorrect you will be given 0 points AND, your time limit will
+          decrease by 10 seconds.
+        </li>
+        <li>Dont forget to, Have Fun!</li>
+      </ul>
+    </article>
+    <div id="leaderboardContainer">
+      <h2>Leaderboard:</h2>
+      <div id="leaderboard"></div>
+    </div>
+    <div class="quizBoxContainer">
+      <h3 id="timer">Time Left: 75</h3>
+      <div id="quizBox">
+        <!-- Your quiz content here -->
+        <button type="button" class="btn" id="start-btn">BEGIN!</button>
+      </div>
+      <div id="saveScoreContainer" style="display: none;">
+        <form id="scoreForm">
+          <label for="initials">Enter Initials:</label>
+          <input type="text" id="initials" name="initials" maxlength="3" />
+          <button type="button" id="saveScoreBtn" onclick="saveScores()">Save Score</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- where the leaderboard will show up using dynamic JS -->
+    <div id="leaderboard" alt="leaderboardContainer"></div>
+
+    <footer class="footer">
+      <div>
+        <ul>
+          <h5 id="footerText">Copyright@FurkanCoskunLLC</h5>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+.body {
+  margin: 0;
+  background: linear-gradient(to right, rgb(173, 158, 135), teal);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  border-style: outset;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: lightslategray;
+  box-shadow: rgb(73, 72, 72) 5px 10px 10px;
+  border-color: grey;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.rulesList,
+#rules {
+  background-color: teal;
+  color: navajowhite;
+}
+li {
+  text-align: left;
+
+}
+#hello{
+  color: rgb(234, 89, 89);
+}
+h1 {
+  color: navajowhite;
+  border-bottom-style: dotted;
+  border-color: black;
+}
+.quizBoxContainer {
+  background-color: teal;
+  color: navajowhite;
+  border-style: outset;
+  border-color: grey;
+  box-shadow: rgb(73, 72, 72) 5px 10px 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+#quizBox {
+  background-color: teal;
+  color: black;
+  border-style: dotted;
+  border-color: black;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 445px;
+  width: 900px;
+}
+
+#leaderboard {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+}
+
+p {
+  padding: 5px;
+  border-color: black;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-style: solid;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 15px;
+}
+
+
+
+.leaderBoardBox {
+  background-color: teal;
+  color: navajowhite;
+  border-style: outset;
+  border-color: grey;
+  box-shadow: rgb(73, 72, 72) 5px 10px 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+  height: 70px;
+}
+
+.footer {
+  border-style: solid;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(23, 22, 22);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  
+}
+#footerText {
+  color: navajowhite;
+  text-align: center;
+  
+}
+.btn {
+  border-style: solid;
+  border-color: black;
+  color: red;
+  background-color: rgb(23, 22, 22);
+}
+.btn:hover {
+  color: grey;
+}
+.answer-btn{
+  border-style: hidden;
+  background-color: teal;
+}
+.answer-btn:hover{
+  border-style: dotted;
+  border-color:rgb(234, 89, 89)
+}
+#leaderboardScore, #leaderboardName {
+  margin-left: 250px;
+  width: auto;
+  background-color: tan
+}
