@@ -1,65 +1,65 @@
 .body {
   margin: 0;
-  background: linear-gradient(to right, rgb(173, 158, 135), teal);
+  background: linear-gradient(to right, #a98a00, #484848);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .container {
   border-style: outset;
   text-align: center;
   flex-wrap: wrap;
-  background-color: lightslategray;
+  background-color: #333;
   box-shadow: rgb(73, 72, 72) 5px 10px 10px;
   border-color: grey;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 
 .rulesList,
 #rules {
-  background-color: teal;
-  color: navajowhite;
+  background-color: #a98a00;
+  color: #000;
 }
+
 li {
   text-align: left;
+}
 
+#hello {
+  color: #ea5959;
 }
-#hello{
-  color: rgb(234, 89, 89);
-}
+
 h1 {
-  color: navajowhite;
+  color: #000;
   border-bottom-style: dotted;
-  border-color: black;
+  border-color: #000;
 }
+
 .quizBoxContainer {
-  background-color: teal;
-  color: navajowhite;
+  background-color: #a98a00;
+  color: #000;
   border-style: outset;
   border-color: grey;
   box-shadow: rgb(73, 72, 72) 5px 10px 10px;
   text-align: center;
   flex-wrap: wrap;
   font-size: 22px;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 25px auto;
   height: 500px;
+  max-width: 900px;
 }
+
 #quizBox {
-  background-color: teal;
-  color: black;
+  background-color: #a98a00;
+  color: #000;
   border-style: dotted;
-  border-color: black;
+  border-color: #000;
   text-align: center;
   flex-wrap: wrap;
   font-size: 22px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   height: 445px;
-  width: 900px;
+  max-width: 900px;
 }
 
 #leaderboard {
@@ -70,8 +70,8 @@ h1 {
 
 p {
   padding: 5px;
-  border-color: black;
-  margin-top: 0;
+  border-color: #000;
+  margin: 0;
   margin-bottom: 1rem;
   border-style: solid;
 }
@@ -82,11 +82,9 @@ h2 {
   padding: 15px;
 }
 
-
-
 .leaderBoardBox {
-  background-color: teal;
-  color: navajowhite;
+  background-color: #a98a00;
+  color: #000;
   border-style: outset;
   border-color: grey;
   box-shadow: rgb(73, 72, 72) 5px 10px 10px;
@@ -100,38 +98,53 @@ h2 {
   border-style: solid;
   border-color: grey;
   border-width: 5px;
-  background-color: rgb(23, 22, 22);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  background-color: #171616;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
   width: 100%;
   height: auto;
-  
 }
+
 #footerText {
-  color: navajowhite;
+  color: #ea5959;
   text-align: center;
-  
 }
+
 .btn {
   border-style: solid;
-  border-color: black;
-  color: red;
-  background-color: rgb(23, 22, 22);
+  border-color: #000;
+  color: #ea5959;
+  background-color: #171616;
 }
+
 .btn:hover {
   color: grey;
 }
-.answer-btn{
+
+.answer-btn {
   border-style: hidden;
-  background-color: teal;
+  background-color: #a98a00;
 }
-.answer-btn:hover{
+
+.answer-btn:hover {
   border-style: dotted;
-  border-color:rgb(234, 89, 89)
+  border-color: #ea5959;
 }
-#leaderboardScore, #leaderboardName {
-  margin-left: 250px;
+
+#leaderboardScore,
+#leaderboardName {
+  margin-left: 10px;
   width: auto;
-  background-color: tan
+  background-color: tan;
+}
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .container,
+  .quizBoxContainer,
+  #quizBox,
+  .leaderBoardBox,
+  .footer {
+    width: 90%;
+  }
 }
